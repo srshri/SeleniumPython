@@ -16,7 +16,7 @@ class TestHomePage(BaseClass):
         driver.find_element_by_css_selector("input[value='Submit']").click()
         message = driver.find_element_by_css_selector("[class*='alert-success']").text
         assert "successfdfdf" in message
-
+        print("New Line")
     @pytest.fixture(params=HomePageData.getTestData("Testcase2"))
     def getData(self, request):
         return request.param
