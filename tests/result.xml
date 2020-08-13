@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="3" failures="0" hostname="LAPTOP-S9G1G7KF" name="pytest" skipped="0" tests="3" time="0.210" timestamp="2020-08-10T20:18:05.220050"><testcase classname="test_HomePage.TestHomePage" file="test_HomePage.py" line="10" name="test_formsubmission[getData0]" time="0.001"><error message="test setup failure">request = &lt;SubRequest &apos;setup&apos; for &lt;Function test_formsubmission[getData0]&gt;&gt;
+
+    @pytest.fixture(scope=&quot;class&quot;)
+    def setup(request):
+        global driver
+        browser_name = request.config.getoption(&quot;browser_name&quot;)
+        if browser_name == &quot;chrome&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\chromedriver.exe&quot;)
+    
+        elif browser_name == &quot;firefox&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\geckodriver.exe&quot;)
+    
+&gt;       driver.get(&quot;https://rahulshettyacademy.com/angularpractice/&quot;)
+E       AttributeError: &apos;NoneType&apos; object has no attribute &apos;get&apos;
+
+conftest.py:23: AttributeError</error></testcase><testcase classname="test_HomePage.TestHomePage" file="test_HomePage.py" line="10" name="test_formsubmission[getData1]" time="0.001"><error message="test setup failure">request = &lt;SubRequest &apos;setup&apos; for &lt;Function test_formsubmission[getData0]&gt;&gt;
+
+    @pytest.fixture(scope=&quot;class&quot;)
+    def setup(request):
+        global driver
+        browser_name = request.config.getoption(&quot;browser_name&quot;)
+        if browser_name == &quot;chrome&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\chromedriver.exe&quot;)
+    
+        elif browser_name == &quot;firefox&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\geckodriver.exe&quot;)
+    
+&gt;       driver.get(&quot;https://rahulshettyacademy.com/angularpractice/&quot;)
+E       AttributeError: &apos;NoneType&apos; object has no attribute &apos;get&apos;
+
+conftest.py:23: AttributeError</error></testcase><testcase classname="test_e2e.TestOne" file="test_e2e.py" line="13" name="test_e2e" time="0.001"><error message="test setup failure">request = &lt;SubRequest &apos;setup&apos; for &lt;Function test_e2e&gt;&gt;
+
+    @pytest.fixture(scope=&quot;class&quot;)
+    def setup(request):
+        global driver
+        browser_name = request.config.getoption(&quot;browser_name&quot;)
+        if browser_name == &quot;chrome&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\chromedriver.exe&quot;)
+    
+        elif browser_name == &quot;firefox&quot;:
+            driver = webdriver.Chrome(
+                executable_path=&quot;D:\Career\Selenium(Python)\chromedriver_win32\geckodriver.exe&quot;)
+    
+&gt;       driver.get(&quot;https://rahulshettyacademy.com/angularpractice/&quot;)
+E       AttributeError: &apos;NoneType&apos; object has no attribute &apos;get&apos;
+
+conftest.py:23: AttributeError</error></testcase></testsuite></testsuites>
